@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AC1</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <img src="./logo/Logo.png" alt="Logo" class="logo" />
+    <img src="./logo/header.png" alt="Header" class="header-image" />
+  </header>
+
+  <div class="container mt-5">
+    <h1 class="text-center">Strings and String Methods</h1>
+    <p class="text-center">Click on each topic to learn more.</p>
+
+    <div class="row">
+
+      <div>
+        <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#stringMethodsModal">
+          String Methods
+        </button>
+      </div>
+      <div>
+        <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#lowerupper">
+          lower() and upper()
+        </button>
+      </div>
+      <div>
+        <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#stripping">
+          strip(), lstrip(), rstrip()
+
+        </button>
+      </div>
+      <div>
+        <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#replace">
+          replace()
+
+        </button>
+      </div>
+      <div>
+        <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#find">
+          find()
+
+        </button>
+      </div>
+      <div>
+        <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#isdigit">
+          isDigit()
+
+        </button>
+      </div>
+     
+      <div>
+        <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#islowerupper">
+          islower(), isupper()
+
+        </button>
+      </div>
+
+      <div>
+        <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#title">
+        title()
+
+        </button>
+      </div>
+
+      <div>
+        <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#swapcase">
+          swapcase()
+
+        </button>
+      </div>
+    
+      <div>
+        <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#count">
+          count()
+
+        </button>
+      </div>
+    </div>
+
+
+    <!-- Modals -->
+
+
+
+
+
+    <div class="modal fade" id="stringMethodsModal" tabindex="-1" aria-labelledby="stringMethodsLabel"
+      aria-hidden="true">
+      <div class="modal-dialog custom-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="stringMethodsLabel">String Methods</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content-container">
+              <div class="text-content">
+                <p>
+                  <strong>Methods</strong> are functions associated with an object or class in Python Programming. They
+                  are used to
+                  perform specific tasks or operations on the data stored within objects or classes.
+                </p>
+                <p>
+                  In Python, all <b>variables are objects.</b> We will learn about the class in upcoming classes.
+                </p>
+                <p>
+                  In simple words, methods are actions that an object can perform. You <b>use a method</b> by attaching
+                  it to
+                  an object with a <b>dot (<strong>.</strong>)</b>.
+                </p>
+                <p>
+                  Different objects have different methods that can be performed on them.
+                  <!-- Let’s have a look at methods we can perform on strings. -->
+                </p>
+
+
+                     
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="lowerupper" tabindex="-1" aria-labelledby="stringMethodsLabel" aria-hidden="true">
+      <div class="modal-dialog custom-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="stringMethodsLabel">String Methods</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content-container">
+              <div class="text-content">
+
+
+                <h5 style="text-align: center;"><strong>👉lower() and upper()</strong></h6>
+                  <br><br>
+                  <ul style="font-size: 3rem !important;">
+                    <li><strong>lower()</strong>: Converts all characters into lowercase</li>
+                    <li><strong>upper()</strong>: Converts all characters into uppercase</li>
+                  </ul>
+                  <img src="./images/image14.png" alt="" style="width: 20%;">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="stripping" tabindex="-1" aria-labelledby="stripping" aria-hidden="true">
+      <div class="modal-dialog custom-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="stringMethodsLabel">String Methods</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content-container">
+              <div class="text-content">
+
+
+                <h5 style="text-align: center;"><strong>👉strip(), lstrip(), rstrip()</strong></h6>
+                  <br><br>
+                  <ul>
+                    <li><strong>strip()</strong>: Removes space at the beginning and end of a string</li>
+                    <li><strong>lstrip()</strong>: Removes space from the beginning of the string</li>
+                    <li><strong>rstrip()</strong>: Removes space at the end of the string</li>
+                  </ul>
+                  <img src="./images/image27.png" alt="" style="width: 50%;">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="replace" tabindex="-1" aria-labelledby="stripping" aria-hidden="true">
+      <div class="modal-dialog custom-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="stringMethodsLabel">String Methods</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content-container">
+              <div class="text-content">
+                <h5 style="text-align: center;"><strong>👉replace()</strong></h6>
+                  <br><br>
+                  <div style="display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;">
+                  <p>
+                    It replaces a specified word with another word.
+                  </p>
+                  <img src="./images/image15.png" alt="" style="width: 40%;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="find" tabindex="-1" aria-labelledby="stripping" aria-hidden="true">
+      <div class="modal-dialog custom-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="stringMethodsLabel">String Methods</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content-container">
+              <div class="text-content">
+                <h5 style="text-align: center;"><strong>👉 find()</strong></h6>
+                  <br>
+                    <p>
+                      It finds the first occurrence of a word in a string. Returns <strong>-1</strong> if the word is not
+                      found.
+                    </p>
+                    <img src="./images/image21.png" alt="" style="width: 30%;">
+                    <p>
+                      Returns <strong>-1</strong> when the word is not found.
+                    </p>
+                    <img src="./images/image18.png" alt="" style="width: 25%;">
+                    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="modal fade" id="isdigit" tabindex="-1" aria-labelledby="stripping" aria-hidden="true">
+      <div class="modal-dialog custom-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="stringMethodsLabel">String Methods</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content-container">
+              <div class="text-content">
+                <h5 style="text-align: center;"><strong>👉 isdigit()</strong></h6>
+                  <br>
+                  <div style="display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;">
+                    <p style="font-size: 1.5rem;">
+                      This method checks if all the characters in the string are digits (0-9). If they are, it returns
+                      <strong>True</strong>; else, it returns <strong>False</strong>.
+                    </p>
+                    <img src="./images/image19.png" alt="" style="width: 23%;">
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="islowerupper" tabindex="-1" aria-labelledby="stringMethodsLabel" aria-hidden="true">
+      <div class="modal-dialog custom-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="stringMethodsLabel">String Methods</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content-container">
+              <div class="text-content">
+
+
+                <h5 style="text-align: center;"><strong>lower() and upper()</strong></h6>
+                  <br><br>
+                  
+                  <h5><strong>👉islower()</strong></h6>
+                    <p>
+                      This method checks if all the characters in a string are in lowercase. If they are, it returns
+                      <strong>True</strong>; else, it returns <strong>False</strong>.
+                    </p>
+                    <img src="./images/image16.png" alt="" style="width: 25%;">
+                    <br>
+                    <hr>
+                    <h5><strong>👉isupper()</strong></h6>
+                      <p>
+                        This method checks if all the characters in a string are in uppercase. If they are, it returns
+                        <strong>True</strong>; else, it returns <strong>False</strong>.
+                      </p>
+                      <img src="./images/image24.png" alt="" style="width: 25%;">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="title" tabindex="-1" aria-labelledby="stripping" aria-hidden="true">
+      <div class="modal-dialog custom-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="stringMethodsLabel">String Methods</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content-container">
+              <div class="text-content">
+                <h5 style="text-align: center;"><strong>👉 title()</strong></h6>
+                  <br>
+                  <div style="display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;">
+                    
+                      <p>
+                        This method converts the first character of each word to uppercase.
+                      </p>
+                      <img src="./images/image22.png" alt="" style="width: 25%;">
+                      
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="swapcase" tabindex="-1" aria-labelledby="stripping" aria-hidden="true">
+      <div class="modal-dialog custom-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="stringMethodsLabel">String Methods</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content-container">
+              <div class="text-content">
+                <h5 style="text-align: center;"><strong>👉swapcase()</strong></h6>
+                  <br>
+                  <div style="display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;">
+                      <p>
+                        As the name suggests, this method changes the characters in lowercase to uppercase and
+                        vice-versa.
+                      </p>
+                      <img src="./images/image26.png" alt="" style="width: 27%;">
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="count" tabindex="-1" aria-labelledby="stripping" aria-hidden="true">
+      <div class="modal-dialog custom-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="stringMethodsLabel">String Methods</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content-container">
+              <div class="text-content">
+                <h5 style="text-align: center;"><strong>👉count()</strong></h6>
+                  <br>
+                  <div style="display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;">
+                                  <p>
+                                    This method counts the number of times a specified value occurs in the string.
+                                  </p>
+                                  <img src="./images/image25.png" alt="" style="width: 45%;">
+                                  
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
